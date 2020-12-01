@@ -16,6 +16,23 @@ The latest precompiled Win32 binary of this program can be downloaded here:
 Previous versions:
 [img2tim_(v0.60).zip](http://lameguy64.github.io/img2tim/img2tim_(v0.60).zip)
 
+## Compile in Linux
+
+You must install `libfreeimage-dev` for debian derivatives; 
+```bash
+sudo apt-get install libfreeimage-dev
+```
+ or `freeimage` for arch derivatives ;
+```bash
+sudo pacman -S freeimage
+```
+then :
+```bash 
+git clone https://github.com/ABelliqueux/img2tim.git
+cd img2tim
+make all
+```
+
 ## Changelog
 **Version 0.75**
 * Fixed a bug where a false error message is thrown when converting 4-bit images with -bpp 4.
